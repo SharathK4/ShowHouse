@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHouse - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Koh+Santepheap:wght@700&family=M+PLUS+2:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="container">
+                <div class="logo">
+                    <img src="ticket_logo.png" alt="ShowHouse Logo" class="logo-image">
+                    <span class="logo-text">ShowHouse</span>
+                </div>
+                <h1>Create an account</h1>
+                <p class="subtitle">Please enter your details</p>
+                <button class="google-btn">
+                    <img src="gmail.png" alt="Google Logo" class="gmail-icon">
+                    Sign Up with Gmail
+                </button>
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="or">or</span>
+                    <span class="line"></span>
+                </div>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember for 30 days</label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+                <p class="switch-form">Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="image-container">
+                <img src="Popcorn_img.png" alt="Popcorn Background">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Instrument Serif', serif;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    margin-left: 10px;
+    color: #000;
+}
+
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    /* padding-bottom: 0.75rem; */
+    transition: color 0.3s ease-out;
+    font-size: 28px;
+    font-weight: 400;
+}
+nav a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: transparent;
+    width: 0;
+    transition: width 0.3s ease-out, background-color 0.3s ease-out;
+}
+nav a:hover::after {
+    width: 100%;
+    background-color: #000;
+}
+nav a.active {
+    color: #FF9915;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.icon {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+.icon-clicked {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+}
+
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Katibeh';
+    font-size: 90px;
+    margin-bottom: 1.5rem;
+}
+
+.filter-buttons {
+    display: inline-flex;
+    background-color: #f0f0f0;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    border: none;
+    background: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-buttons button.active {
+    background-color: #FF9915;
+    color: white;
+    animation: bounce 0.5s;
+}
+
+.filter-buttons button:not(.active):hover {
+    background-color: #e0e0e0;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.movie-carousel {
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+.poster {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 450px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.overlay-content h2 {
+    margin-bottom: 1rem;
+}
+
+.overlay-content input,
+.overlay-content select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.overlay-content button {
+    background-color: #FF9915;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.overlay-content button:hover {
+    background-color: #e88c00;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav {
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .icons {
+        margin-top: 0.5rem;
+    }
+}

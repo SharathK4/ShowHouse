@@ -1,0 +1,117 @@
+body {
+    font-family: 'Instrument Serif', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-family: 'Katibeh', cursive;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a.active {
+    color: #FF9915;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.confirmation-message {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.confirmation-message svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.ticket {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ticket-header {
+    background-color: #FF9915;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.ticket-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.ticket-body {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.ticket-info {
+    flex: 1;
+}
+
+.ticket-info p {
+    margin: 0.5rem 0;
+}
+
+/* .qr-code {
+    width: 100px;
+    height: 100px;
+} */
+
+.ticket-footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    /* padding: 0rem; */
+    font-size: 0.8rem;
+    color: #666;
+}
