@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHouse - Discover Latest Content</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ticket_logo.png" alt="ShowHouse Logo" class="logo-image">
+                <span class="logo-text">ShowHouse</span>
+            </div>
+        
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="/ShowHouse/AllMovies/index.html">Movies</a>
+                <a href="#">Concerts</a>
+            </div>
+
+            <div class="icons">
+                <button class="icon" id="searchIcon"><img src="search.png" alt="search Logo"></button>
+                <button class="icon" id="locationIcon"><img src="location.png" alt="location Logo"></button>
+                <a href="/ShowHouse/loginAndSignup/login.html"> <button class="icon"><img src="man.png" alt="profile Logo" ></button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Latest Content</h1>
+        <div class="filter-buttons">
+            <button class="active" data-filter="popular">Popular</button>
+            <button data-filter="top-rated">Top Rated</button>
+            <button data-filter="latest">Latest</button>
+        </div>
+        <div id="movieCarousel" class="movie-carousel">
+            <div class="poster" data-id="1">
+                <a href="/ShowHouse/mix/index.html"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQn9mCzFG4DCn-6jFpZHuDPdl2Zj2P-BMNDKMX2zJ_R6Sf6VTx1&psig=AOvVaw2dKZuzsYJUBV_DhSNDbO_s&ust=1728105339679000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLjk4Jj884gDFQAAAAAdAAAAABAE" alt="Movie 1"></a> 
+            </div>
+            <div class="poster" data-id="2">
+                <a href="/ShowHouse/mix/index.html"></a><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcT9oW0XQlu1lo1G_49M-YwGzKR6rUg-CtflZj07HfbT8d2GwKWg&psig=AOvVaw3C2JHugOHji0rmgeVHWuMI&ust=1728105370600000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKDLvqf884gDFQAAAAAdAAAAABAE" alt="Deadpool & Wolverine"></a> 
+            </div>
+            <div class="poster" data-id="3">
+                <a href="/ShowHouse/mix/index.html"></a><img src="https://c4.wallpaperflare.com/wallpaper/852/644/1008/alien-movie-poster-sigourney-weaver-movie-poster-wallpaper-preview.jpg" alt="Movie 3"></a> 
+            </div>
+            <div class="poster" data-id="4">
+                <a href="/ShowHouse/mix/index.html"></a><img src="https://i.pinimg.com/originals/78/5b/f0/785bf0b0644e64a1d69baaa372854e64.png" alt="Movie 4"></a> 
+            </div>
+            <div class="poster" data-id="5">
+                <a href="/ShowHouse/mix/index.html"></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9L5ioBgk7f2z2IuczkmstiT-ag2Vkh0rRJQ&s" alt="Movie 5"></a> 
+            </div>
+        </div>
+    </main>
+
+    <div id="searchOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Search Movies</h2>
+            <input type="text" placeholder="Enter movie title...">
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+
+    <div id="locationOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Select Location</h2>
+            <select>
+                <option>Gurugram</option>
+                <option>Noida</option>
+                <option>New Delhi</option>
+                <option>Faridabad</option>
+            </select>
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>

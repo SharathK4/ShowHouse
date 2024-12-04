@@ -1,0 +1,199 @@
+/* Base styling */
+body, html {
+    font-family: 'M PLUS 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox container to split screen */
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 155px;
+}
+
+/* Left side styling (login credentials) */
+.left-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+/* Right side styling (popcorn image) */
+.right-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 33px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Heading and subtitle styling */
+h1 {
+    font-family: 'Koh Santepheap', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.google-btn {
+    width: 100%;
+    max-width: 450px;
+    height: 35px;
+    background: #FFFEFE;
+    border: 1px solid rgba(161, 163, 159, 0.81);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.gmail-icon {
+    width: 20px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+/* Divider styling */
+.divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #A1A39F;
+}
+
+.or {
+    margin: 0 10px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000000;
+}
+
+/* Input styling */
+.form-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 366px;
+    height: 44px;
+    background: #FFFEFE;
+    border: 1px solid rgba(161, 163, 159, 0.81);
+    border-radius: 28px;
+    padding: 0 40px 0 20px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+/* Checkbox and forgot password styling */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    margin-left: auto;
+    font-weight: 200;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    max-width: 366px;
+    height: 44px;
+    background: #FF9915;
+    border: none;
+    border-radius: 28px;
+    color: #FFFBFB;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Switch form link */
+.switch-form {
+    font-weight: 200;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.switch-form a {
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+}

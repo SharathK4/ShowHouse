@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHouse - Seat Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="movieTitle">Select Your Seats</h1>
+        <div class="booking-container">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="seat available"></div>
+                    <span>Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="seat selected"></div>
+                    <span>Selected</span>
+                </div>
+                <div class="legend-item">
+                    <div class="seat reserved"></div>
+                    <span>Reserved</span>
+                </div>
+            </div>
+            <div id="seatsContainer" class="seats-container"></div>
+            <div class="screen"></div>
+            <div class="booking-info">
+                <div class="total">
+                    <h2>Total</h2>
+                    <p id="totalPrice">₹ 0.00</p>
+                </div>
+                <div class="date-time">
+                    <p id="currentDate"></p>
+                    <p id="currentTime"></p>
+                </div>
+                <div class="selected-seats">
+                    <p>Seats</p>
+                    <p id="selectedSeatsDisplay">None selected</p>
+                </div>
+            </div>
+            <a href="ticket-confirmation.html"> <button  id="buyTicketBtn" class="buy-ticket" disabled>Buy Ticket</button></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

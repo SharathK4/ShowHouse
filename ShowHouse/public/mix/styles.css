@@ -1,0 +1,155 @@
+body {
+    font-family: 'Instrument Serif', serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.booking-container {
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.seat {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seat.available {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.seat.selected {
+    background-color: #FF9915;
+    color: white;
+}
+
+.seat.reserved {
+    background-color: #6b7280;
+    color: white;
+    cursor: not-allowed;
+}
+
+.screen {
+    height: 1rem;
+    background: linear-gradient(to bottom, #e5e7eb, transparent);
+    border-radius: 9999px;
+    margin-bottom: 2rem;
+}
+
+.booking-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.total h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.total p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF9915;
+    margin: 0;
+}
+
+.date-time p, .selected-seats p {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.buy-ticket {
+    width: 100%;
+    background-color: #FF9915;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-ticket:hover:not(:disabled) {
+    background-color: #e88c13;
+}
+
+.buy-ticket:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.available {
+    background-color: green;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+.reserved {
+    background-color: grey;
+    cursor: not-allowed;
+}

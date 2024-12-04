@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/ticket_logo.png" alt="ShowHouse Logo" class="logo-image">
+                <span class="logo-text">ShowHouse</span>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/movies">Movies</a>
+                <a href="#">Concerts</a>
+            </div>
+            <div class="icons">
+                <button class="icon" id="searchIcon"><img src="/search.png" alt="Search Logo"></button>
+                <button class="icon" id="locationIcon"><img src="/location.png" alt="Location Logo"></button>
+                <a href="/login"><button class="icon"><img src="/man.png" alt="Profile Logo"></button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{{body}}} <!-- Page-specific content will render here -->
+    </main>
+
+    <footer>
+        {{> footer}} <!-- Handlebars partial for the footer -->
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
